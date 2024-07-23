@@ -1,0 +1,1507 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --lightred: #ff6868;
+  --yellow: #ffe605;
+  --gray: #b0b4b7;
+  --darkgray: #555555;
+  --green: #39db4a;
+  --lightgreen: #90bd95;
+  --blackish: #4a4a4a;
+  --black: #1e1e1e;
+  --seagreen: #c1f1c6;
+}
+.container {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.common_padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.px-85 {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 62px;
+  font-weight: 900;
+  margin-bottom: 90px;
+}
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--lightred);
+  letter-spacing: 3px;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+/* nav */
+body {
+  position: relative;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  z-index: 10;
+}
+.toggler {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_link ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_link ul li {
+  margin-left: 40px;
+}
+.nav_link ul li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+}
+.nav_link ul li a.active {
+  color: var(--green);
+}
+.nav_link ul li a i {
+  color: var(--green);
+}
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact p {
+  font-size: 10px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-35% -10%);
+  padding: 5px 8px;
+  border-radius: 100%;
+  background-color: var(--green);
+  color: var(--white);
+}
+.contact i {
+  font-size: 24px;
+  margin-left: 40px;
+}
+.contact .btn {
+  margin-left: 40px;
+  padding: 15px 30px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact .btn .fa-phone {
+  margin-left: 0px;
+}
+/* banner */
+.banner {
+  height: 100vh;
+  position: relative;
+  background-color: rgb(252, 251, 251);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner_content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner_content .left_part, .banner_content .right_part{
+  width: 50%;
+}
+.banner_content .left_part {
+  position: relative;
+}
+.banner_content .left_part h1 span {
+  color: var(--green);
+}
+.banner_content .left_part p {
+  width: 70%;
+  margin-bottom: 74px;
+  color: var(--blackish);
+}
+.banner_content .banner_btn {
+  padding: 30px 47px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 26px;
+  box-shadow: -2px 22px 38px #8eff9a;
+  margin-right: 30px;
+}
+.banner_content .watch_btn {
+  font-size: 26px;
+  color: var(--gray);
+}
+.pause_btn {
+  position: absolute;
+  top: 86%;
+  left: 60%;
+  transform: translate(-60% -86%);
+}
+.pause_btn i {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 28px;
+  padding: 25px 35px;
+  border-radius: 50%;
+  box-shadow: 7px 35px 51px rgba(0, 0, 0, 0.1);
+}
+
+.banner_content .right_part {
+  position: relative;
+  /* background-color: red; */
+}
+.spicy_food {
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  transform: translatey(-5% -24%);
+}
+.spicy_food p {
+  color: var(--lightred);
+  font-size: 18px;
+}
+.spicy_food i {
+  color: var(--lightred);
+}
+.spicy_noodles,
+.salad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spicy_noodles {
+  width: 45%;
+  position: absolute;
+  top: 92%;
+  left: 1%;
+  transform: translate(-1% -92%);
+  border: 1px solid var(--white);
+  border-radius: 25px;
+  background-color: var(--white);
+  padding: 16px;
+  box-shadow: 7px 35px 51px rgba(0, 0, 0, 0.14);
+}
+.salad {
+  width: 45%;
+  position: absolute;
+  top: 92%;
+  left: 55%;
+  transform: translate(-55% -92%);
+  border: 1px solid var(--white);
+  border-radius: 25px;
+  background-color: var(--white);
+  padding: 16px;
+  box-shadow: 7px 35px 51px rgba(0, 0, 0, 0.14);
+}
+.spicy_noodles .left_part,
+.salad .left_part {
+  width: 20%;
+  margin-right: 15px;
+}
+.spicy_noodles .right_part,
+.salad .right_part {
+  width: 80%;
+}
+.spicy_noodles p,
+.salad p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.spicy_noodles span,
+.salad span {
+  color: var(--lightred);
+}
+.spicy_noodles i,
+.salad i {
+  margin-bottom: 10px;
+}
+.spicy_noodles .fa-solid,
+.salad .fa-solid {
+  color: var(--yellow);
+}
+.spicy_noodles .fa-regular,
+.salad .fa-regular {
+  color: var(--gray);
+}
+/* categories */
+.categories {
+  margin-top: 100px;
+  /* background-color: pink; */
+}
+.categories_text_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.categories_text h5 {
+  margin-bottom: 44px;
+}
+.categories_text h2 {
+  margin-bottom: 79px;
+}
+.categories_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categories_card .card {
+  padding: 40px;
+  width: 24%;
+  background-color: var(--white);
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 40px;
+  box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.categories_card .card .card_img {
+  margin-bottom: 20px;
+}
+.categories_card .card .card_img figure {
+  width: 153px;
+  height: 153px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.categories_card .card .card_text h3 {
+  margin-bottom: 20px;
+}
+.categories_card .card .card_text p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--gray);
+}
+/* dishes */
+.dishes_text_part {
+  position: relative;
+}
+.dishes .dishes_text {
+  text-align: left;
+}
+.dishes .dishes_text h5 {
+  margin-bottom: 50px;
+}
+.dishes .dishes_text h2 {
+  margin-bottom: 80px;
+}
+.dishes .dishes_text_part .left_arrow .fa-angle-left,
+.dishes .dishes_text_part .right_arrow .fa-angle-right {
+  border-radius: 50%;
+  padding: 18px 24px;
+  font-size: 20px;
+}
+.dishes .dishes_text_part .left_arrow .fa-angle-left {
+  position: absolute;
+  top: 67%;
+  right: 10%;
+  transform: translate(-10% -67%);
+  background-color: var(--gray);
+  color: var(--black);
+}
+.dishes .dishes_text_part .right_arrow .fa-angle-right {
+  position: absolute;
+  top: 67%;
+  right: 3%;
+  transform: translate(-3% -67%);
+  background-color: var(--green);
+  color: var(--white);
+}
+.dishes_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dishes_card .card {
+  position: relative;
+  width: 32%;
+  background-color: var(--white);
+  padding: 50px;
+  box-shadow: 2px 9px 42px rgba(0, 0, 0, 0.08);
+  border-radius: 40px;
+  text-align: center;
+}
+.dishes_card .card .card_img figure {
+  width: 276px;
+  height: 276px;
+  margin: 0 auto;
+}
+.dishes_card .card .card_img {
+  margin-bottom: 25px;
+}
+.dishes_card .card .card_text {
+  text-align: left;
+}
+.dishes_card .card .card_text h3 {
+  margin-bottom: 25px;
+}
+.dishes_card .card .card_text p {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: var(--blackish);
+}
+.dishes_card .card .card_text .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dishes_card .card .card_text span {
+  color: var(--lightred);
+  font-size: 18px;
+  font-weight: 700;
+}
+.dishes_card .card .card_text .text .left_part p {
+  color: var(--black);
+  font-weight: 700;
+}
+.dishes_card .card .card_text .text .right_part i {
+  color: var(--yellow);
+}
+.rectangle {
+  position: absolute;
+  width: 20%;
+  top: -1%;
+  right: -1%;
+}
+.heart {
+  position: absolute;
+  top: 4%;
+  right: 8%;
+  color: var(--white);
+}
+/* testimonial */
+.testimonial_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial_content .left_part,
+.testimonial_content .right_part {
+  width: 50%;
+}
+.testimonial_content .left_part {
+  position: relative;
+}
+.chef {
+  position: absolute;
+  bottom: 10%;
+  right: 14%;
+}
+.chef p {
+  font-size: 20px;
+}
+.testimonial_content .right_part h5 {
+  margin-bottom: 75px;
+}
+.testimonial_content .right_part h2 {
+  margin-bottom: 40px;
+}
+.testimonial_content .right_part .text1 {
+  margin-bottom: 73px;
+  color: var(--blackish);
+  line-height: 38px;
+}
+.testimonial_content .right_part .feedback {
+  display: flex;
+  align-items: center;
+}
+.testimonial_content .right_part .feedback .left_part {
+  display: flex;
+  position: relative;
+}
+.testimonial_content .right_part .feedback .left_part figure {
+  width: 28%;
+  height: 108px;
+}
+.testimonial_content .right_part .feedback .left_part .img2 {
+  position: absolute;
+  left: 18%;
+}
+.testimonial_content .right_part .feedback .left_part .img3 {
+  position: absolute;
+  left: 35%;
+}
+.testimonial_content .right_part .feedback .right_part .bold {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.testimonial_content .right_part .feedback .right_part p i {
+  color: var(--yellow);
+}
+/* service */
+.service_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service_content .left_part,
+.service_content .right_part {
+  width: 50%;
+}
+.service_content .left_part h5 {
+  margin-bottom: 68px;
+  text-transform: uppercase;
+}
+.service_content .left_part h2 {
+  margin-bottom: 60px;
+}
+.service_content .left_part p {
+  margin-bottom: 58px;
+  color: var(--blackish);
+}
+.service_content .left_part .btn {
+  padding: 25px 60px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 26px;
+}
+.service_content .right_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.service_content .right_part .upper_row,
+.service_content .right_part .lower_row {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.service_content .right_part .card {
+  width: 50%;
+  padding: 43px;
+  box-shadow: 7px 12px 43px rgba(0, 0, 0, 0.14);
+  /* opacity: 0.14; */
+  border-radius: 30px;
+  text-align: center;
+  color: var(--green);
+  margin: 20px;
+}
+.service_content .right_part .card .card_img {
+  width: 22%;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+.service_content .right_part .card .card_text h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.service_content .right_part .card .card_text p {
+  color: var(--lightgreen);
+  font-size: 20px;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .upper_part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+footer .upper_part .card {
+  width: 20%;
+}
+footer .upper_part .card figure {
+  width: 35%;
+  margin-bottom: 42px;
+}
+footer .upper_part .card p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--blackish);
+  margin-bottom: 40px;
+}
+footer .upper_part .card .heading_text {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 42px;
+  color: var(--black);
+}
+footer .upper_part .card ul li {
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--blackish);
+}
+footer .lower_part {
+  display: flex;
+  justify-content: space-between;
+}
+footer .lower_part .social_links {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 40%;
+}
+footer .lower_part .social_links i {
+  margin-left: 15px;
+}
+footer .lower_part .social_links .fa-facebook-f {
+  background-color: var(--green);
+  color: var(--white);
+}
+footer .lower_part .text_part {
+  width: 60%;
+}
+footer .lower_part .text_part p {
+  font-size: 18px;
+  color: var(--blackish);
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    margin-bottom: 80px;
+  }
+  h2 {
+    font-size: 55px;
+  }
+  /* nav */
+  nav {
+    top: 50px;
+  }
+  /* banner */
+  .banner_content .banner_btn {
+    padding: 24px 42px;
+    font-size: 22px;
+  }
+  .banner_content .watch_btn {
+    font-size: 22px;
+  }
+  .pause_btn {
+    top: 86%;
+    left: 55%;
+    transform: translate(-55% -86%);
+  }
+  .spicy_noodles {
+    width: 50%;
+  }
+  .salad {
+    width: 50%;
+  }
+  .spicy_noodles .left_part,
+  .salad .left_part {
+    margin-right: 10px;
+  }
+  .spicy_noodles p,
+  .salad p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  h1 {
+    font-size: 54px;
+    margin-bottom: 75px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 22px;
+  }
+  /* nav */
+  nav {
+    top: 30px;
+  }
+  /* banner */
+
+  .banner_content .banner_btn {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+  .banner_content .watch_btn {
+    font-size: 20px;
+  }
+  .pause_btn {
+    top: 86%;
+    left: 50%;
+    transform: translate(-50% -86%);
+  }
+  .pause_btn i {
+    padding: 22px 30px;
+  }
+  .spicy_noodles {
+    width: 50%;
+    padding: 12px;
+    top: 92%;
+    left: -2%;
+    transform: translate(2% -92%);
+  }
+  .salad {
+    width: 50%;
+    padding: 12px;
+    top: 92%;
+    left: 53%;
+    transform: translate(-53% -92%);
+  }
+  .spicy_noodles p,
+  .salad p {
+    font-size: 18px;
+  }
+  /* categories */
+  /* testimonial */
+  .testimonial_content .right_part .text1 {
+    font-size: 22px;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    height: 85px;
+  }
+  /* service */
+  .service_content .left_part p {
+    font-size: 22px;
+    margin-bottom: 55px;
+  }
+  .service_content .left_part .btn {
+    padding: 20px 40px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .common_padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  h1 {
+    font-size: 48px;
+    margin-bottom: 55px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+  /* nav */
+  .nav_link ul li a {
+    font-size: 17px;
+  }
+  .contact i {
+    font-size: 20px;
+  }
+  .contact .btn {
+    padding: 13px 25px;
+    font-size: 18px;
+  }
+  /* banner */
+  .banner_content .banner_btn {
+    padding: 15px 27px;
+    font-size: 17px;
+  }
+  .pause_btn {
+    top: 88%;
+    left: 60%;
+    transform: translate(-50% -88%);
+  }
+  .pause_btn i {
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+  .spicy_food p {
+    font-size: 12px;
+  }
+  /* categories */
+  .categories_text h5 {
+    margin-bottom: 40px;
+  }
+  .categories_text h2 {
+    margin-bottom: 55px;
+  }
+  .categories_card .card {
+    padding: 30px;
+  }
+  .categories_card .card .card_img figure {
+    width: 130px;
+    height: 130px;
+  }
+  /* dishes */
+  .dishes .dishes_text h5 {
+    margin-bottom: 40px;
+  }
+  .dishes .dishes_text h2 {
+    margin-bottom: 50px;
+  }
+  .dishes_card .card {
+    padding: 25px;
+  }
+  .dishes_card .card .card_img figure {
+    width: 240px;
+    height: 240px;
+  }
+  .dishes_card .card .card_text h3 {
+    margin-bottom: 20px;
+  }
+  .dishes_card .card .card_text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  /* testimonial */
+  .chef p {
+    font-size: 12px;
+  }
+  .testimonial_content .right_part h5 {
+    margin-bottom: 40px;
+  }
+  .testimonial_content .right_part .text1 {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    width: 32%;
+    height: 82px;
+  }
+  .testimonial_content .right_part .feedback .left_part .img2 {
+    left: 22%;
+  }
+  .testimonial_content .right_part .feedback .left_part .img3 {
+    left: 45%;
+  }
+  /* service */
+  .service_content .left_part h5 {
+    margin-bottom: 30px;
+  }
+  .service_content .left_part h2 {
+    margin-bottom: 40px;
+  }
+  .service_content .left_part p {
+    margin-bottom: 40px;
+  }
+  .service_content .left_part .btn {
+    padding: 15px 27px;
+    font-size: 17px;
+  }
+  .service_content .right_part .card {
+    padding: 20px;
+    margin: 10px;
+  }
+  .service_content .right_part .card .card_img {
+    margin-bottom: 15px;
+  }
+  .service_content .right_part .card .card_text h4 {
+    margin-bottom: 15px;
+  }
+  .service_content .right_part .card .card_text p {
+    font-size: 15px;
+  }
+
+  /* footer */
+  footer .upper_part .card p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  footer .upper_part .card ul li {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 33px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  /* nav */
+  nav {
+    top: 20px;
+  }
+  .navbar .logopart figure {
+    width: 70%;
+  }
+  .nav_link ul li {
+    margin-left: 20px;
+  }
+  .contact i {
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  .contact .btn {
+    margin-left: 25px;
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+  /* banner */
+  .banner_content .left_part p {
+    margin-bottom: 48px;
+  }
+  .banner_content .banner_btn {
+    padding: 14px 24px;
+    font-size: 17px;
+  }
+  .banner_content .watch_btn {
+    font-size: 17px;
+  }
+  .pause_btn {
+    top: 89%;
+    left: 70%;
+  }
+  .pause_btn i {
+    font-size: 18px;
+    padding: 15px 22px;
+  }
+  .spicy_food {
+    left: 3%;
+  }
+  .spicy_noodles {
+    top: 91%;
+    padding: 8px;
+  }
+  .salad {
+    top: 91%;
+    padding: 8px;
+  }
+  .spicy_noodles p,
+  .salad p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  /* categories */
+  .categories_text h5 {
+    margin-bottom: 30px;
+  }
+  .categories_text h2 {
+    margin-bottom: 40px;
+  }
+  .categories_card .card .card_img figure {
+    width: 100px;
+    height: 100px;
+  }
+  .categories_card .card .card_text h3 {
+    margin-bottom: 10px;
+  }
+  .categories_card .card .card_text p {
+    font-size: 18px;
+  }
+  /* dishes */
+  .dishes .dishes_text h5 {
+    margin-bottom: 30px;
+  }
+  .dishes .dishes_text_part .left_arrow .fa-angle-left,
+  .dishes .dishes_text_part .right_arrow .fa-angle-right {
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+  .dishes .dishes_text_part .left_arrow .fa-angle-left {
+    top: 67%;
+    right: 15%;
+    transform: translate(-15% -67%);
+  }
+  .dishes_card .card .card_img figure {
+    width: 190px;
+    height: 190px;
+  }
+  /* testimonial */
+  .testimonial_content .right_part h5 {
+    margin-bottom: 30px;
+  }
+  .testimonial_content .right_part .text1 {
+    margin-bottom: 40px;
+    line-height: 32px;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    width: 40%;
+    height: 80px;
+  }
+  .testimonial_content .right_part .feedback .left_part .img2 {
+    left: 25%;
+  }
+  .testimonial_content .right_part .feedback .left_part .img3 {
+    left: 50%;
+  }
+  /* service */
+  .service_content .left_part .btn {
+    padding: 14px 24px;
+    font-size: 17px;
+  }
+  /* footer */
+  footer .upper_part .card figure {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  footer .upper_part .card .heading_text {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  footer .upper_part .card p {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  footer .upper_part .card ul li {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .common_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  /* nav */
+  nav {
+    top: 5px;
+    background-color: var(--lightgreen);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .toggler {
+    display: block;
+  }
+  .nav_link {
+    display: none;
+  }
+  .nav_link ul {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .nav_link ul li {
+    margin: 10px 0;
+  }
+  .showList {
+    display: block;
+  }
+  /* banner */
+  .banner_content {
+    flex-direction: column;
+  }
+  .banner_content .left_part, .banner_content .right_part{
+    width: 100%;
+  }
+  .pause_btn {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50% -85%);
+  }
+  .banner_content .right_part figure {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .spicy_food {
+    top: 24%;
+    left: 25%;
+    transform: translatey(-25% -24%);
+  }
+  .spicy_food p {
+    font-size: 10px;
+  }
+  .spicy_noodles {
+    width: 40%;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10% -90%);
+  }
+  .salad {
+    width: 40%;
+  }
+  .spicy_noodles .left_part,
+  .salad .left_part {
+    width: 30%;
+  }
+  .spicy_noodles .right_part,
+  .salad .right_part {
+    width: 70%;
+  }
+  /* categories */
+  .categories {
+    padding-top: 200px;
+  }
+  .categories_text h5 {
+    margin-bottom: 20px;
+  }
+  .categories_card {
+    flex-wrap: wrap;
+  }
+  .categories_card .card {
+    width: 45%;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  /* dishes */
+  .dishes .dishes_text h5 {
+    margin-bottom: 20px;
+  }
+  .dishes_card {
+    flex-wrap: wrap;
+  }
+  .dishes_card .card {
+    width: 45%;
+    margin-bottom: 25px;
+    padding: 25px;
+  }
+  .dishes_card .card .card_img figure {
+    width: 150px;
+    height: 150px;
+  }
+  .dishes_card .card .card_img {
+    margin-bottom: 15px;
+  }
+  /* testimonial */
+  .testimonial_content {
+    flex-wrap: wrap;
+  }
+  .testimonial_content .left_part,
+  .testimonial_content .right_part {
+    width: 100%;
+  }
+  .testimonial_content .left_part figure {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .chef {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+  }
+  .testimonial_content .right_part h5 {
+    margin-bottom: 20px;
+  }
+  .testimonial_content .right_part .feedback .left_part {
+    display: flex;
+    margin-right: 100px;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    width: 25%;
+    height: 62px;
+  }
+  .testimonial_content .right_part .feedback .left_part .img2 {
+    position: absolute;
+    left: 54%;
+  }
+  .testimonial_content .right_part .feedback .left_part .img3 {
+    position: absolute;
+    left: 70%;
+  }
+  /* service */
+  .service_content {
+    flex-wrap: wrap;
+  }
+  .service_content .left_part,
+  .service_content .right_part {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .service_content .left_part h5 {
+    margin-bottom: 20px;
+  }
+  .service_content .left_part h2 {
+    margin-bottom: 30px;
+  }
+  /* footer */
+  footer .upper_part {
+    flex-wrap: wrap;
+  }
+  footer .upper_part .card {
+    width: 45%;
+    margin-bottom: 25px;
+  }
+  footer .upper_part .card figure {
+    width: 30%;
+  }
+  footer .upper_part .card p {
+    width: 70%;
+    font-size: 15px;
+  }
+  footer .upper_part .card ul li {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  footer .lower_part {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  footer .lower_part .social_links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+  footer .lower_part .text_part {
+    width: 100%;
+  }
+  footer .lower_part .text_part p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .common_padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h3{
+    font-size: 17px;
+  }
+  h5{
+    font-size: 14px;
+  }
+  .contact i {
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  .contact .btn {
+    padding: 8px 15px;
+    font-size: 10px;
+  }
+  /* nav */
+  nav {
+    top: -3px;
+  }
+  /* banner */
+  .banner_content .left_part{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .banner_content .left_part p {
+    width: 100%;
+  }
+  .spicy_noodles,
+  .salad {
+    display: none;
+  }
+  .banner_content .banner_btn {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+  .banner_content .watch_btn {
+    font-size: 12px;
+  }
+  .pause_btn {
+    display: none;
+  }
+  .banner_content .right_part figure {
+    margin-top: 50px;
+    width: 70%;
+  }
+  .spicy_food {
+    position: absolute;
+    top: 34%;
+    left: 14%;
+    transform: translatey(-14% -34%);
+  }
+  /* categories */
+  .categories {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+  }
+  /* dishes */
+  .dishes_card .card .card_img figure {
+    width: 100px;
+    height: 100px;
+  }
+  .heart {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    color: var(--white);
+  }
+  .heart i{
+    font-size: 10px;
+  }
+  /* testimonial */
+  .testimonial_content .right_part{
+    text-align: center;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    width: 24%;
+    height: 42px;
+  }
+  .testimonial_content .right_part .feedback .right_part .bold {
+   
+    margin-bottom: 10px;
+  }
+  /* service */
+  .service_content .left_part p {
+    font-size: 18px;
+  }
+  .service_content .left_part .btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  /* footer */
+  footer .upper_part{
+    margin-bottom: 30px;
+  }
+  footer .lower_part .social_links i {
+    font-size: 14px;
+    padding: 8px 14px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: var(--lightgreen);
+  }
+}
+@media screen and (max-width:489px) {
+  .px-85{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  h3{
+    font-size: 16px;
+  }
+  /* banner */
+  .banner_content{
+    height: 80vh;
+  }
+  .banner_content .left_part p {
+    margin-bottom: 25px;
+  }
+  .spicy_food p {
+    font-size: 8px;
+  }
+  /* categories */
+  .categories_card .card {
+    width: 48%;
+  }
+  .categories_card .card .card_text p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray);
+  }
+  /* dishes */
+  .dishes .dishes_text_part .dishes_text{
+    text-align: center;
+  }
+  .dishes .dishes_text_part .left_arrow, .dishes .dishes_text_part .right_arrow{
+    display: none;
+  }
+  .dishes_card .card .card_text p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  /* testimonial */
+  .chef p {
+    font-size: 10px;
+  }
+  .testimonial_content .right_part h2 {
+    margin-bottom: 25px;
+  }
+  /* footer */
+  footer .lower_part .social_links {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:320px) {
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 17px;
+  }
+  h5{
+    font-size: 10px;
+  }
+  p{
+    font-size: 12px;
+  }
+  .banner{
+    height: 80vh;
+  }
+  .banner_content{
+    height: 70vh;
+  }
+  .banner_content .right_part figure{
+    width: 100%;
+  }
+  .spicy_food {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    transform: translatey(-4% -40%);
+  }
+  .spicy_food p {
+    color: var(--lightred);
+    font-size: 5px;
+  }
+  /* categories */
+  .categories_text h5 {
+    margin-bottom: 10px;
+  }
+  .categories_text h2 {
+    margin-bottom: 15px;
+  }
+  .categories_card .card {
+    width: 100%;
+  }
+  /* dishes */
+  .dishes .dishes_text h5 {
+    margin-bottom: 10px;
+  }
+  .dishes .dishes_text h2 {
+    margin-bottom: 15px;
+  }
+  .dishes_card .card {
+    width: 100%;
+  }
+  /* testimonial */
+  .chef p {
+    font-size: 5px;
+  }
+  .testimonial_content .right_part h5 {
+    margin-bottom: 10px;
+  }
+  .testimonial_content .right_part h2 {
+    margin-bottom: 15px;
+  }
+  .testimonial_content .right_part .text1 {
+    margin-bottom: 15px;
+    
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .testimonial_content .right_part .feedback {
+    flex-direction: column;
+  }
+  .testimonial_content .right_part .feedback .left_part figure {
+    width: 22%;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  /* service */
+  .service_content .left_part{
+    text-align: center;
+  }
+  .service_content .left_part h5 {
+    margin-bottom: 10px;
+  }
+  .service_content .left_part h2 {
+    margin-bottom: 15px;
+  }
+  .service_content .left_part p {
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
+  .service_content .right_part .upper_row,
+.service_content .right_part .lower_row {
+  flex-direction: column;
+}
+  .service_content .right_part .card {
+    width: 100%;
+  }
+  /* footer */
+  footer .upper_part .card {
+    width: 100%;
+  }
+  footer .upper_part .card .heading_text {
+    font-size: 20px;
+  }
+  footer .upper_part .card p {
+    margin-bottom: 10px;
+  }
+  footer .upper_part .card ul li {
+    margin-bottom: 10px;
+  }
+}
